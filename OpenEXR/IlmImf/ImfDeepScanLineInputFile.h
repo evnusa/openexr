@@ -69,6 +69,12 @@ class DeepScanLineInputFile : public GenericInputFile
                            int version, /*version field from file*/
                            int numThreads = globalThreadCount());
 
+    // eVN - custom constructor
+    IMF_EXPORT
+    DeepScanLineInputFile (OPENEXR_IMF_INTERNAL_NAMESPACE::IStream *is,
+                           int numThreads = globalThreadCount());
+    // eVN - custom constructor
+
 
     //-----------------------------------------
     // Destructor -- deallocates internal data
